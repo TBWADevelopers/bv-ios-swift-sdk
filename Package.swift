@@ -16,10 +16,12 @@ let package = Package(
     targets: [
         .target(
             name: "BVSwift",
-            dependencies: []),
+            dependencies: [],
+            path: "BVSwift"),
         .testTarget(
             name: "BVSwiftTests",
-            dependencies: ["BVSwift"]),
+            dependencies: ["BVSwift"],
+            path: "BVSwiftTests"),
     ],
     swiftLanguageVersions: [.v4_2]
 )
